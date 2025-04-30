@@ -1,0 +1,24 @@
+[project]
+name = "diff-eq"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.10.1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "ruff>=0.11.8",
+]
+
+[tool.mypy]
+strict = true
+follow_untyped_imports = true
+untyped_calls_exclude = ["mpl_toolkits"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+quote-style = "double"
