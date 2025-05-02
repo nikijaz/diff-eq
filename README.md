@@ -21,5 +21,5 @@ Multiple **matplotlib** scripts used to generate high-quality visualizations for
 3. Run desired script:
 
     ```shell
-    uv run <script_name>.py
+    uv run src/<script_name>.py
     ```
